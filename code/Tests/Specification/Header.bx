@@ -1,0 +1,190 @@
+{
+    "Logo":
+    {
+        "Title": "BlowUp"
+    },
+    "Menu":
+    {
+        "Sections":
+        [
+            {
+                "Title": "Section 1",
+                "Items":
+                [
+                    {
+                        "Title": "Apple",
+                        "Destination": "https://www.apple.com"
+                    },
+                    {
+                        "Title": "Google",
+                        "Destination": "https://www.google.com"
+                    },
+                    {
+                        "Title": "Microsoft",
+                        "Destination": "https://www.microsoft.com"
+                    }
+                ]
+            },
+            {
+                "Title": "Section 2",
+                "Items":
+                [
+                    {
+                        "Title": "C# documentation",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "Get started",
+                        "Destination": "https://github.com/mayakron/blowup",
+                        "Items":
+                        [
+                            {
+                                "Title": "Tour of C#",
+                                "Destination": "https://github.com/mayakron/blowup"
+                            },
+                            {
+                                "Title": "Tutorials",
+                                "Destination": "https://github.com/mayakron/blowup",
+                                "Items":
+                                [
+                                    {
+                                        "Title": "Choose your first lesson",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    },
+                                    {
+                                        "Title": "Hello world and text",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    },
+                                    {
+                                        "Title": "Numbers in C#",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    },
+                                    {
+                                        "Title": "Tuples and types",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    },
+                                    {
+                                        "Title": "Branches and loops",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    },
+                                    {
+                                        "Title": "List collections",
+                                        "Destination": "https://github.com/mayakron/blowup",
+                                        "Items":
+                                        [
+                                            {
+                                                "Title": "This is a level 4 menu item",
+                                                "Destination": "https://github.com/mayakron/blowup",
+                                                "Items":
+                                                [
+                                                    {
+                                                        "Title": "This is a level 5 menu item",
+                                                        "Destination": "https://github.com/mayakron/blowup"
+                                                    },
+                                                    {
+                                                        "Title": "This is another level 5 menu item",
+                                                        "Destination": "https://github.com/mayakron/blowup"
+                                                    },
+                                                    {
+                                                        "Title": "This is yet another level 5 menu item",
+                                                        "Destination": "https://github.com/mayakron/blowup"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Title": "This is another level 4 menu item",
+                                                "Destination": "https://github.com/mayakron/blowup"
+                                            },
+                                            {
+                                                "Title": "This is yet another level 4 menu item",
+                                                "Destination": "https://github.com/mayakron/blowup"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Title": "Pattern matching",
+                                        "Destination": "https://github.com/mayakron/blowup"
+                                    }
+                                ]
+                            },
+                            {
+                                "Title": "C# language strategy",
+                                "Destination": "https://github.com/mayakron/blowup"
+                            },
+                            {
+                                "Title": "Learn C# for Java developers",
+                                "Destination": "https://github.com/mayakron/blowup"
+                            },
+                            {
+                                "Title": "Learn C# for JavaScript developers",
+                                "Destination": "https://github.com/mayakron/blowup"
+                            },
+                            {
+                                "Title": "Learn C# for Python developers",
+                                "Destination": "https://github.com/mayakron/blowup"
+                            }
+                        ]
+                    },
+                    {
+                        "Title": "Fundamentals",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "What's new in C#",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "Language-Integrated Query (LINQ)",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "Asynchronous programming",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "C# concepts",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "How-to C# articles",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "Advanced topics",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "The .NET Compiler Platform SDK (Roslyn APIs)",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "C# programming guide",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    },
+                    {
+                        "Title": "Other C# documentation",
+                        "Destination": "https://github.com/mayakron/blowup"
+                    }
+                ]
+            },
+            {
+                "Title": "Section 3",
+                "Items":
+                [
+                    {
+                        "Title": "Apple",
+                        "Destination": "https://www.apple.com"
+                    },
+                    {
+                        "Title": "Google",
+                        "Destination": "https://www.google.com"
+                    },
+                    {
+                        "Title": "Microsoft",
+                        "Destination": "https://www.microsoft.com"
+                    }
+                ]
+            }
+        ]
+    }
+}

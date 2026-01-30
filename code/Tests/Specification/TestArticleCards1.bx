@@ -1,0 +1,33 @@
+{
+    "Items":
+    [
+        {
+            "Image": "TestArticleCardImage1.jpg",
+            "Title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum libero sed viverra ultricies. Etiam id orci ullamcorper, faucibus mauris nec, cursus enim. Morbi sed scelerisque erat.",
+            "AuthorDateContext": "JOHN DOE – SEP 12, 2025",
+            "Destination": "https://github.com/mayakron/blowup"
+        },
+        {
+            "Image": "TestArticleCardImage2.jpg",
+            "Title": "Sed quis sem vel diam aliquam fermentum venenatis et eros",
+            "Description": "Sed quis sem vel diam aliquam fermentum venenatis et eros. Sed vel cursus nisi, id vestibulum dolor. In elementum pretium dapibus. Praesent tincidunt risus id augue vestibulum faucibus a eget purus.",
+            "AuthorDateContext": "JOHN DOE – SEP 13, 2025",
+            "Destination": "https://github.com/mayakron/blowup"
+        },
+        {
+            "Image": "TestArticleCardImage3.png",
+            "Title": "Vestibulum eget lacus vitae velit laoreet sodales",
+            "Description": "Vestibulum eget lacus vitae velit laoreet sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque vitae lectus eu orci volutpat tempus vel id nulla.",
+            "AuthorDateContext": "JOHN DOE – SEP 15, 2025",
+            "Destination": "https://github.com/mayakron/blowup"
+        },
+        {
+            "Image": "TestArticleCardImage4.jpg",
+            "Title": "Nullam elementum, neque sed placerat imperdiet",
+            "Description": "Nullam elementum, neque sed placerat imperdiet, est magna posuere arcu, non semper eros neque a sapien. Etiam vestibulum quam ut vehicula gravida. Cras ac ligula nec velit interdum rhoncus vitae vitae ante.",
+            "AuthorDateContext": "JOHN DOE – SEP 21, 2025",
+            "Destination": "https://github.com/mayakron/blowup"
+        }
+    ]
+}

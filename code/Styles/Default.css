@@ -1,0 +1,351 @@
+﻿html
+{
+    margin: auto;
+    width: 1200px;
+}
+
+body
+{
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+    text-underline-offset: 20%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    font-size: 200%;
+}
+
+h2
+{
+    font-size: 170%;
+}
+
+h3
+{
+    font-size: 140%;
+}
+
+h4
+{
+    font-size: 120%;
+}
+
+h5
+{
+    font-size: 110%;
+}
+
+ol,
+ul
+{
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+ol
+{
+    list-style-type: decimal;
+}
+
+ul
+{
+    list-style-type: disc;
+}
+
+pre
+{
+    background: #f4f4f4;
+    border: 1px solid #b0b0b0;
+    font-family: monospace;
+    font-size: 90%;
+    margin: 0px;
+    overflow: auto;
+    padding: 15px;
+}
+
+span.code
+{
+    background-color: #f4f4f4;
+    font-family: monospace;
+    font-size: 90%;
+    padding: 2px;
+}
+
+blockquote
+{
+    border-left: 5px solid #c0c0c0;
+    font-size: 110%;
+    font-style: italic;
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 0px 15px;
+}
+
+table
+{
+    border: 1px #224477 solid;
+    border-collapse: collapse;
+}
+
+thead
+{
+    background-color: #224477;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr
+{
+    border: 1px #224477 solid;
+}
+
+tr:nth-child(even)
+{
+    background: #f0f0f0;
+}
+
+td,
+th
+{
+    margin: 0px;
+    padding: 5px 15px;
+    vertical-align: top;
+}
+
+a
+{
+    color: #224477;
+    font-weight: bold;
+    text-decoration-color: #acc4e7;
+}
+
+a.tc1
+{
+    font-size: 110%;
+}
+
+a.tc2
+{
+    margin: 0px 0px 0px 15px;
+}
+
+a.tc3
+{
+    margin: 0px 0px 0px 30px;
+}
+
+a.tc4
+{
+    margin: 0px 0px 0px 45px;
+}
+
+img
+{
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+}
+
+nav
+{
+}
+
+#navbar
+{
+    align-items: center;
+    background: linear-gradient(90deg, #224477 0%, #000000 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+}
+
+#navico
+{
+}
+
+#navic1
+{
+    display: block;
+}
+
+#navic2
+{
+    display: none;
+}
+
+#navlgo
+{
+    flex-grow: 1;
+    text-align: center;
+}
+
+#spnlgo
+{
+    font-size: 230%;
+    font-weight: bold;
+}
+
+#navmnu
+{
+    background-color: white;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    padding: 10px 30px 30px 30px;
+    position: absolute;
+}
+
+span.navmsn
+{
+    border-bottom: 1px solid #d0d0d0;
+    display: block;
+    font-size: 140%;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+}
+
+ul.navmi1
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a.navmi1
+{
+    font-size: 110%;
+}
+
+ul.navmi2
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+a.navmi2
+{
+}
+
+ul.navmi3
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+a.navmi3
+{
+}
+
+ul.navmi4
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+a.navmi4
+{
+}
+
+ul.navmi5
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+a.navmi5
+{
+}
+
+article
+{
+    border-bottom: 1px solid #c0c0c0;
+    padding: 30px 15px 30px 15px;
+}
+
+footer
+{
+    color: #404040;
+    font-size: 80%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+div.crdblk
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 2%;
+}
+
+div.crditm
+{
+    background-color: #f4f4f4;
+    width: 49%;
+}
+
+img.crdimg
+{
+}
+
+span.crdtx1
+{
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    padding: 10px 20px 5px 20px;
+}
+
+span.crdtx2
+{
+    display: block;
+    padding: 5px 20px 5px 20px;
+}
+
+span.crdtx3
+{
+    display: block;
+    font-size: 80%;
+    padding: 5px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    html
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,144 @@
+##### BlowUp #####
+
+$$TableOfContents$$
+
+#### Introduction ####
+
+BlowUp is a low friction markup language with an almost WYSIWYG plain-text formatting syntax for the most common situations writers encounter, and a set of extensions with a coherent JSON-based data model for the less common ones. Inspiration for its design has been taken from [[AsciiDoc::https://en.wikipedia.org/wiki/AsciiDoc]], [[DocBook::https://en.wikipedia.org/wiki/DocBook]], [[LaTeX::https://en.wikipedia.org/wiki/LaTeX]], [[Markdown::https://en.wikipedia.org/wiki/Markdown]], [[MathML::https://en.wikipedia.org/wiki/MathML]], [[Plain Old Documentation::https://en.wikipedia.org/wiki/Plain_Old_Documentation]], [[reStructuredText::https://en.wikipedia.org/wiki/ReStructuredText]], [[Scalable Vector Graphics::https://en.wikipedia.org/wiki/Scalable_Vector_Graphics]], [[Scribe::https://en.wikipedia.org/wiki/Scribe_(markup_language)]], [[TeX::https://en.wikipedia.org/wiki/TeX]], [[Texinfo::https://en.wikipedia.org/wiki/Texinfo]] and [[Troff::https://en.wikipedia.org/wiki/Troff]].
+
+This document is both a specification of the BlowUp language and a functional test for its parser.
+
+#### A Level 2 Title ####
+
+There are five available hierarchy levels.
+
+### A Level 3 Title ###
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit laoreet metus et lobortis. Vestibulum elementum urna a ante scelerisque imperdiet. Cras consectetur pulvinar enim, a pharetra lorem tincidunt in. Sed et blandit elit. Morbi viverra libero orci, sit amet suscipit orci bibendum posuere. Duis venenatis diam sit amet nulla varius malesuada. Morbi posuere urna ac erat cursus, eget auctor nibh aliquet. Duis eget ante urna. Pellentesque tempor lacus id sem cursus tincidunt. Curabitur et nibh lacus. Proin rhoncus, enim at ultricies vulputate, tortor massa euismod tellus, id placerat quam metus eu diam. Proin pretium risus ac elit posuere, ut tincidunt augue fringilla. Phasellus aliquet est eget mi vulputate laoreet. Cras sit amet nisi velit. Fusce faucibus, ante vitae tristique vestibulum, orci sapien consectetur elit, eget convallis nisl nibh quis quam.
+
+Etiam ac varius tellus. Curabitur tempus sed leo id dapibus. Fusce condimentum, ex vel sollicitudin suscipit, libero sapien malesuada neque, sit amet volutpat sapien neque ut nibh. Sed tristique consectetur lacus, pharetra viverra massa luctus vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nisi nulla, fermentum ut magna nec, condimentum egestas mi. Cras luctus laoreet sapien non accumsan. Aliquam erat volutpat. Morbi sed posuere metus, ut rhoncus est. Mauris vel malesuada justo. Nam faucibus ex nibh, at porttitor metus finibus vel. Sed sodales mattis augue et sodales. Ut mi leo, laoreet at quam vel, venenatis iaculis odio. Vivamus iaculis urna ac vulputate tincidunt. Ut consectetur semper elit, id posuere velit pulvinar in. Vivamus porttitor tincidunt dui at porttitor.
+
+Donec placerat maximus turpis ut interdum. Praesent at erat vitae nisi varius finibus. Etiam at ultrices nulla, vel volutpat dui. Quisque laoreet magna quis metus placerat sagittis. Cras convallis, nunc semper tempus venenatis, libero lorem tempus tellus, non consectetur nibh turpis a felis. Morbi bibendum porttitor est, ac eleifend risus dapibus non. Praesent non venenatis magna. Vivamus ut facilisis orci, non rutrum eros. Ut a ante in odio malesuada vulputate ut feugiat ipsum. Aliquam sit amet magna mauris. Sed lacinia elit velit, et ultricies felis vestibulum sed. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+## A Level 4 Title ##
+
+Donec nec urna congue, viverra lectus id, feugiat ligula. Nullam in dui at purus auctor mollis vitae et leo. Fusce in erat pharetra, ornare lectus et, molestie elit. Fusce finibus porta lorem in feugiat. Curabitur feugiat interdum lorem, eu molestie metus. Morbi at leo in diam auctor porta eu at nisi. Praesent vitae augue nec lorem placerat convallis nec non leo. Proin sed leo nulla. Maecenas bibendum molestie erat ut aliquet. Nulla cursus sem pulvinar massa viverra, non maximus massa tincidunt.
+
+# A Level 5 Title #
+
+Morbi placerat ante in nunc ultricies, eu dapibus ante ornare. Quisque posuere libero a leo convallis mollis. Integer mattis sit amet erat at consectetur. Vivamus condimentum tincidunt mauris id mollis. Proin id maximus nisl. Vestibulum posuere lectus et justo pulvinar, eget convallis augue vestibulum. Aenean id placerat magna. Donec vitae nunc sagittis, suscipit leo ut, accumsan erat. Sed ultricies ut leo eget congue. Nullam mollis varius faucibus. Maecenas molestie ut arcu quis pharetra.
+
+## Another Level 4 Title ##
+
+There are **bold**, __italic__ and ~~strikethough~~ tags:
+
+3 * 4 = 12 (you should see it normal); **3 * 4 = 12 (you should see it bold)**; __3 * 4 = 12 (you shoud see it italic)__; ~~3 * 4 = 12 (you shoud see it strikethrough)~~
+
+All special entities are correctly represented:
+
+àäèéÈìòùçæñ<>°ª§^$£¤©|«»µ½⅓⅔¼¾⅕⅖⅗⅘‰~❶❷❸❹♠♣♥♦∞“”…%‰♀♂
+
+Here is how some formulas can be written:
+
+H₂O A₀₁₂₃₄₅₆₇₈₉B 10⁻⁴ A⁺⁻⁽⁰¹²³⁴⁵⁶⁷⁸⁹⁾ⁿB αβγδεηθλμπρ ≡≈±×÷⁄≤≥≠
+
+Here is how quote blocks can be written:
+
+> Aenean convallis mauris tellus, eget feugiat erat lobortis sed. Mauris risus augue, pellentesque nec semper porta, sodales ac nisi. Suspendisse eu elit nulla. Morbi sagittis dolor sit amet nisl porta, suscipit viverra urna interdum. Nulla faucibus felis vitae tellus lobortis, ac mattis elit congue. Mauris hendrerit ex vel justo fermentum, et hendrerit velit aliquet. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque maximus auctor mi, sed semper nunc ullamcorper sit amet.
+>
+> (Marcus Tullius Cicero)
+
+Here is how ordered lists can be written:
+
+    1. Element A
+    2. Element B
+    3. Element C
+
+Here is how unordered lists can be written:
+
+    * Element A
+    * Element B
+    * Element C
+
+In ordered and unordered lists indentation matters and must consist of blocks of exactly 4 spaces:
+
+    * Element A
+        * Element A.1
+            1. Element A.1.1
+            2. Element A.1.2
+        * Element A.2
+        * Element A.3
+    * Element B
+        * Element B.1
+        * Element B.2
+    * Element C
+        1. Element C.1
+        2. Element C.2
+        3. Element C.3
+
+Here is how links can be written:
+
+    * [[Google::https://www.google.com]]
+    * [[Microsoft::https://www.microsoft.com]]
+
+Or:
+
+    * [[https://www.google.com]]
+    * [[https://www.microsoft.com]]
+
+Or: (all the links below should appear on the same line)
+
+[[Google::https://www.google.com]], [[https://www.google.com]], [[Microsoft::https://www.microsoft.com]], [[https://www.microsoft.com]], [[BlowUp]].
+
+Here is how images, which are responsive by default, can be included:
+
+||This is a test image.::TestImage1.jpg||
+
+Here is how data tables can be written (text alignment in columns is determined by the use of spaces):
+
+| ------------------------------------------------------------------------------------ |
+| Pos | City                                                 | Country   |  Population |
+| ------------------------------------------------------------------------------------ |
+|  1  | [[Beijing::https://en.wikipedia.org/wiki/Beijing]]   | China PR  |  21,542,000 |
+|  2  | [[Tokyo::https://en.wikipedia.org/wiki/Tokyo]]       | Japan     |  13,929,000 |
+|  3  | [[Moscow::https://en.wikipedia.org/wiki/Moscow]]     | Russia    |  12,506,000 |
+|  4  | [[Kinshasa::https://en.wikipedia.org/wiki/Kinshasa]] | DR Congo  |  11,855,000 |
+|  5  | [[Jakarta::https://en.wikipedia.org/wiki/Jakarta]]   | Indonesia |  10,075,000 |
+| ------------------------------------------------------------------------------------ |
+
+Or:
+
+┌─────┬──────────────────────────────────────────────────────┬───────────┬─────────────┐
+│ Pos │ City                                                 │ Country   │  Population │
+├─────┼──────────────────────────────────────────────────────┼───────────┼─────────────┤
+│  1  │ [[Beijing::https://en.wikipedia.org/wiki/Beijing]]   │ China PR  │  21,542,000 │
+│  2  │ [[Tokyo::https://en.wikipedia.org/wiki/Tokyo]]       │ Japan     │  13,929,000 │
+│  3  │ [[Moscow::https://en.wikipedia.org/wiki/Moscow]]     │ Russia    │  12,506,000 │
+│  4  │ [[Kinshasa::https://en.wikipedia.org/wiki/Kinshasa]] │ DR Congo  │  11,855,000 │
+│  5  │ [[Jakarta::https://en.wikipedia.org/wiki/Jakarta]]   │ Indonesia │  10,075,000 │
+└─────┴──────────────────────────────────────────────────────┴───────────┴─────────────┘
+
+Here is how code blocks can be written:
+
+` Hello!
+` This is a code block.
+`     Indentation is of course preserved.
+`     Inside a code block all transformations should be **disabled (you should not see this as bold)**.
+`     It must be possible to enter literals like [[http://www.google.com]] and <script>alert('You should not see this as an alert!');</script>.
+` Bye.
+
+Backticks can be used for inline code like ``System.IO.File`` or for literals like ``[[http://www.google.com]]`` (you should not see this as a link) and ``<script>alert('You should not see this as an alert!');</script>``.
+
+Here is how dynamic images can be included using the Graphviz runner:
+
+$$DynamicImage TestDynamicImage1.bx$$
+
+Here is how dynamic images can be included using the Gnuplot runner:
+
+$$DynamicImage TestDynamicImage2.bx$$
+
+Here is how article cards, a visual and interactive preview of an article or blog post, can be included:
+
+$$ArticleCards TestArticleCards1.bx$$
+
+End of document.

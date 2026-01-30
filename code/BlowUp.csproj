@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E78DD5B-0718-4234-AA57-D17656AEE336}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BlowUp</RootNamespace>
+    <AssemblyName>BlowUp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BlowUp.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory" />
+    <Reference Include="System.Text.Json" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DocumentArticleCardsObject.cs" />
+    <Compile Include="Models\DocumentDataColumn.cs" />
+    <Compile Include="Models\DocumentDataColumnHorizontalAlignment.cs" />
+    <Compile Include="Models\DocumentDataRow.cs" />
+    <Compile Include="Models\DocumentDataTable.cs" />
+    <Compile Include="Models\DocumentArticleCardsInput.cs" />
+    <Compile Include="Models\DocumentDynamicImageInput.cs" />
+    <Compile Include="Models\DocumentDynamicImageObject.cs" />
+    <Compile Include="Models\DocumentTableOfContentsObject.cs" />
+    <Compile Include="Models\SiteHeaderLogo.cs" />
+    <Compile Include="Models\SiteHeaderMenu.cs" />
+    <Compile Include="Models\SiteHeaderMenuSection.cs" />
+    <Compile Include="Models\SiteHeaderMenuItem.cs" />
+    <Compile Include="Models\SiteHeader.cs" />
+    <Compile Include="Models\DocumentObject.cs" />
+    <Compile Include="Models\DocumentList.cs" />
+    <Compile Include="Models\DocumentListType.cs" />
+    <Compile Include="Models\DocumentCodeBlock.cs" />
+    <Compile Include="Models\DocumentQuoteBlock.cs" />
+    <Compile Include="Models\DocumentText.cs" />
+    <Compile Include="Models\DocumentImage.cs" />
+    <Compile Include="Models\DocumentTitle.cs" />
+    <Compile Include="Models\DocumentWhiteSpace.cs" />
+    <Compile Include="Parsers\BlowUpParser.cs" />
+    <Compile Include="Parsers\BlowUpParserState.cs" />
+    <Compile Include="Parsers\BlowUpParserUtilities.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Renderers\HtmlRenderer.cs" />
+    <Compile Include="Utilities\JsonSerializerUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Runners\Gnuplot.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Runners\Graphviz.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\Default.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\Default.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
