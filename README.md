@@ -17,8 +17,6 @@
 
 BlowUp is a low friction markup language with an almost WYSIWYG plain-text formatting syntax for the most common situations writers encounter, and a set of extensions with a coherent JSON-based data model for the less common ones.
 
-You can find an example of its capabilities [here](https://raw.githubusercontent.com/mayakron/blowup/main/code/Tests/Specification/BlowUp.htm).
-
 ## Download
 
 All versions of BlowUp can be downloaded from [here](https://github.com/mayakron/blowup/releases).
